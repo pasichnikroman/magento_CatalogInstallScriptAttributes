@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Fixstacks_CatalogInstallScriptAttributes>
+            <version>0.1.0</version>
+        </Fixstacks_CatalogInstallScriptAttributes>
+    </modules>
+    <global>
+        <resources>
+            <fixstacks_catalog_setup>
+                <setup>
+                    <module>Fixstacks_CatalogInstallScriptAttributes</module>
+                    <class>Mage_Catalog_Model_Resource_Setup</class>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </fixstacks_catalog_setup>
+            <fixstacks_catalog_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </fixstacks_catalog_write>
+            <fixstacks_catalog_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </fixstacks_catalog_read>
+        </resources>
+    </global>
+
+</config>
